@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>CmdLang Online</title>
+
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<!-- Header stuff -->
+		<header>
+			<span>CmdLang</span>
+		</header>
+
+
+		<!-- Main content -->
+		<main>
+			<div id="top">
+				<textarea id="program" class="io" placeholder="Program"></textarea>
+				<textarea id="output" class="io" disabled></textarea>
+
+				<input id="input" type="text" placeholder="Program input">
+
+				<div id="controls">
+					<button id="run">Start</button>
+					<button id="debug">Debug</button>
+					<button id="next">Next Command</button>
+					<button id="to-breakpoint">Run to Breakpoint</button>
+				</div>
+			</div>
+
+			<div id="bottom">
+				<div id="memory-map"></div>
+			</div>
+		</main>
+
+
+		<!-- Scripts -->
+		<script src="compress.js" charset="utf-8"></script>
+		<script src="interpreter.js" charset="utf-8"></script>
+		<script src="main.js" charset="utf-8"></script>
+		<script src="load.js" charset="utf-8"></script>
+
+	</body>
+</html>
